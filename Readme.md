@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergei Kurapov](https://up.htmlacademy.ru/htmlcss/38/user/1591253).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
