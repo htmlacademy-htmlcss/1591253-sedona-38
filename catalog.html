@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
-  <body>
+  <body class="catalog">
     <div class="wrapper">
       <header class="page-header">
         <a href="index.html" class="logo-link">
@@ -62,7 +62,7 @@
           <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -126,6 +126,7 @@
         </header>
 
         <section class="products">
+          <div class="products-select">
           <h2 class="sedona-h2 h2-catalog">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap"> Сначала дешевые</option>
@@ -141,6 +142,7 @@
           <a href="#" class="button-light">
             <span class="visually-hidden">Показать списком</span>
           </a>
+        </div>
           <ul class="product-list">
             <li class="product-card">
               <a href="#" class="product-card-link">
