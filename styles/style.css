@@ -496,7 +496,7 @@ body {
 
 .inner-header-title {
   padding: 0;
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
@@ -509,6 +509,11 @@ body {
   margin: 0;
   margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
+}
+.breadcrumbs-link-home {
+padding: 2px 0 0 0;
+display: block;
 }
 
 .breadcrumbs-item {
@@ -518,6 +523,8 @@ body {
   line-height: 21px;
   text-align: center;
   position: relative;
+  margin-right: 11px;
+  padding-right: 17px;
 }
 
 .breadcrumbs-item:not(:last-child):after {
@@ -527,20 +534,14 @@ body {
   height: 10px;
   background-repeat: no-repeat;
   background-image: url("../images/catalog/bread-crumbs/arrow.svg");
-  margin: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
 }
-
-.breadcrumbs-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 15px;
-}
-
 .catalog-products {}
 
 
@@ -652,8 +653,7 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
 }
-
-. .button-black {
+ .button-black {
   border-color: #000000;
 }
 
@@ -668,32 +668,32 @@ body {
 
 .product-card {
   display: grid;
-  /*grid-template-rows: 212px min-content auto min-content 16px;*/
+  width: 300px;
   padding: 20px;
+  /*grid-template-rows: 212px 1fr;*/
+  gap:20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
-  grid-template-rows: auto auto;
+  align-items: center;
 
 }
 
 .product-card-link {
   text-decoration: none;
-  margin: 0;
-  padding: 0;
+  grid-column: 1/-1;
 }
 
 .product-card-image {
-  width: 300;
-  height: 212;
+  width: 300px;
+  height: 212px;
   margin: 0;
   padding: 0;
 }
 
 .product-card-title {
-  margin: 16px 0;
+  margin: 0;
   padding: 0;
   font-size: 24px;
-  font-style: normal;
   line-height: 28px;
   color: #000000;
 }
@@ -703,6 +703,7 @@ body {
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 20px;
+  grid-template-rows: 36px;
 }
 
 .product-button-block {
@@ -715,7 +716,6 @@ body {
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 20px;
-
 }
 
 .product-type {
@@ -800,8 +800,6 @@ body {
 
 .pagination-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .pagination-item:nth-child(1) .pagination-link {
@@ -810,7 +808,9 @@ body {
 }
 
 .pagination-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   min-width: 60px;
   height: 60px;
@@ -976,6 +976,11 @@ label[for="email"] {
 .social-item {}
 
 .social-item-icon {}
+
+.phone-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .footer-phone {
   font-size: 40px;
