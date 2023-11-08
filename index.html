@@ -232,43 +232,39 @@
     </div>
     <div class="modal modal--close">
 
-      <div class="modal-block">
+      <div class="modal-block modal-auth">
         <button class="close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <h2 class="sedona-h2 modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="modal-content-group">
-              <legend class="modal-content-title">Дата заезда:</legend>
-              <label for="check-in" class="check-in">
-                <input class="check-in-field" placeholder="Укажите дату" type="check-in" id="check-in" name="check-in"
-                  required>
-              </label>
-            </fieldset>
-            <fieldset class="modal-content-group">
-              <legend class="modal-content-title">Дата выезда:</legend>
-              <label for="check-out" class="check-out">
-                <input class="check-out-field" placeholder="Укажите дату" type="check-out" id="check-out"
-                  name="check-out" required>
-              </label>
-            </fieldset>
-            <fieldset class="modal-content-group">
-              <legend class="modal-content-title">Взрослые:</legend>
-              <label for="start-end" class="modal-range">
-                <input type="number" id="start-end" class="modal-range-input" name="start" min="1" max="1000"
-                  placeholder="0">
-              </label>
-            </fieldset>
-            </fieldset>
-            <fieldset class="modal-content-group">
-              <legend class="modal-content-title">Дети:</legend>
-              <label for="start-end" class="modal-range">
-                <input type="number" id="start-end" class="modal-range-input" name="start" min="1" max="1000"
-                  placeholder="0">
-              </label>
-            </fieldset>
-            <div class="button-filter-list">
+            <p class="modal-content-group">
+              <label class="search-option" for="check-in">Дата заезда:</label>
+              <input class="field field-date" placeholder="Укажите дату" type="text" id="check-in" name="check-in"
+                value="27 апреля 2020" required>
+              <span class="modal-error">Мы не можем отправить вас в прошлое</span>
+            </p>
+            <p class="modal-content-group">
+              <label class="search-option" for="main-menu-link">Дата выезда:</label>
+              <input class="field field-date" placeholder="Укажите дату" type="text" id="check-out" name="check-out"
+                value="1 сентября 2023" required>
+              <span class="modal-clue">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="modal-content-people">
+
+              <p class="modal-content-group">
+                <label for="start-end" class="search-option">Взрослые:</label>
+                <input type="number" id="start-end" class="field field-range-input" type="number" name="adult" min="1" max="99"
+                  placeholder="0" value="2" required>
+              </p>
+              <p class="modal-content-group">
+                <label for="start-end" class="search-option">Дети:</label>
+                <input type="number" id="start-end" class=" field field-range-input" type="number" name="child" min="0" max="99"
+                  placeholder="0" value="2">
+              </p>
+            </div>
+            <div class="button-modal-group">
               <button class="button-modal button-link" type="submit">Найти</button>
             </div>
           </form>
