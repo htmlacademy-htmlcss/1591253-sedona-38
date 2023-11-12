@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
@@ -105,7 +106,7 @@
               <img src="./images/advantages/photo-2.jpg" alt="Горы Седона" class="advantages-images" width="800"
                 height="385">
               <div class="advantages-container">
-                <h3 class="sedona-h3 advantages-title-small">Там есть мост дьявола</h3>
+                <h3 class="sedona-h3 advantages-title-small">Там есть <br> мост дьявола</h3>
                 <p class="description-small advantages-description-small">Да, по нему можно пройти! Если вы осмелитесь,
                   разумеется</p>
               </div>
@@ -150,7 +151,7 @@
           <h2 class="sedona-h2 subscription-title">Подпишитесь на рассылку</h2>
           <p class="description-big description-index">Только полезная информация и никакого спама, <br> честное
             бойскаутское!</p>
-          <form class="subscription-form" action="#" method="post">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email">Email</label>
             <input class="email-field" placeholder="Ваш e-mail" type="email" id="email" name="email" required>
             <button class="call-to-action-button subscription-button" type="submit">Подписаться</button>
@@ -234,36 +235,75 @@
 
       <div class="modal-block modal-auth">
         <button class="close-button">
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"  aria-hidden="true" focusable="false">
+<path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="currentColor"/>
+</svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="sedona-h2 modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="modal-content-group">
-              <label class="search-option" for="check-in">Дата заезда:</label>
+            <div class="modal-content-group">
+              <label class="search-option" for="check-in">Дата Заезда:</label>
               <input class="field field-date" placeholder="Укажите дату" type="text" id="check-in" name="check-in"
                 value="27 апреля 2020" required>
               <span class="modal-error">Мы не можем отправить вас в прошлое</span>
-            </p>
-            <p class="modal-content-group">
-              <label class="search-option" for="main-menu-link">Дата выезда:</label>
+            </div>
+            <div class="modal-content-group">
+              <label class="search-option" for="check-out">Дата Выезда:</label>
               <input class="field field-date" placeholder="Укажите дату" type="text" id="check-out" name="check-out"
                 value="1 сентября 2023" required>
               <span class="modal-clue">На эти даты есть свободные номера. Пока есть.</span>
-            </p>
-            <div class="modal-content-people">
-
-              <p class="modal-content-group">
-                <label for="start-end" class="search-option">Взрослые:</label>
-                <input type="number" id="start-end" class="field field-range-input" type="number" name="adult" min="1" max="99"
-                  placeholder="0" value="2" required>
-              </p>
-              <p class="modal-content-group">
-                <label for="start-end" class="search-option">Дети:</label>
-                <input type="number" id="start-end" class=" field field-range-input" type="number" name="child" min="0" max="99"
-                  placeholder="0" value="2">
-              </p>
             </div>
+            <div class="modal-content-people">
+              <div class="modal-content-group">
+                <label for="adult-quntity" class="search-option">Взрослые:</label>
+                <div class="field-adult">
+                <button class="less quntity-button" type="button">
+                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="2">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                </svg>
+                </button>
+                <input type="number" id="adult-quntity" class="field field-range-input" name="adult" min="1"
+                  max="9" placeholder="0" value="2" required>
+                  <button class="more quntity-button" type="button">
+                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false" width="14" height="14">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
+                      </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-content-group">
+                <span class="form-label form-label-icon">
+                <label for="start-end" class="search-option search-option-child">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" aria-hidden="true" focusable="false" >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                      </svg>
+                  </button>
+
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут c вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+                <div class="field-child">
+                <button class="less quntity-button" type="button">
+                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="2">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                </svg>
+                </button>
+                <input type="number" id="start-end" class="field field-range-input" name="child" min="0"
+                  max="9" placeholder="0" value="2">
+                  <button class="more quntity-button" type="button">
+                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false" width="14" height="14">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
+                      </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
             <div class="button-modal-group">
               <button class="button-modal button-link" type="submit">Найти</button>
             </div>
