@@ -235,9 +235,12 @@
 
       <div class="modal-block modal-auth">
         <button class="close-button">
-        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"  aria-hidden="true" focusable="false">
-<path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="currentColor"/>
-</svg>
+          <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" aria-hidden="true"
+            focusable="false">
+            <path
+              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
+              fill="currentColor" />
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -256,48 +259,56 @@
               <span class="modal-clue">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="modal-content-people">
-              <div class="modal-content-group">
-                <label for="adult-quntity" class="search-option">Взрослые:</label>
+              <div class="modal-content-group modal-content-group-adult">
+                <label for="adult-quntity" class="search-option search-option-adult">Взрослые:</label>
                 <div class="field-adult">
-                <button class="less quntity-button" type="button">
-                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="2">
-                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
-                </svg>
-                </button>
-                <input type="number" id="adult-quntity" class="field field-range-input" name="adult" min="1"
-                  max="9" placeholder="0" value="2" required>
+                  <button class="less quntity-button" type="button">
+                    <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                      width="14" height="2">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <input type="number" id="adult-quntity" class="field field-range-input" name="adult" min="1" max="9"
+                    placeholder="0" value="2" required>
                   <button class="more quntity-button" type="button">
-                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false" width="14" height="14">
+                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                      width="14" height="14">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
-                      </svg>
+                    </svg>
                   </button>
                 </div>
               </div>
               <div class="modal-content-group">
                 <span class="form-label form-label-icon">
-                <label for="start-end" class="search-option search-option-child">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" aria-hidden="true" focusable="false" >
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                  <label for="start-end" class="search-option search-option-child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12"
+                        aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                       </svg>
-                  </button>
-
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут c вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </button>
+                    <span class="tooltip-container">
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                        которые
+                        будут c вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
                 </span>
-              </span>
                 <div class="field-child">
-                <button class="less quntity-button" type="button">
-                  <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="2">
-                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
-                </svg>
-                </button>
-                <input type="number" id="start-end" class="field field-range-input" name="child" min="0"
-                  max="9" placeholder="0" value="2">
+                  <button class="less quntity-button" type="button">
+                    <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                      width="14" height="2">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <input type="number" id="start-end" class="field field-range-input" name="child" min="0" max="9"
+                    placeholder="0" value="2">
                   <button class="more quntity-button" type="button">
-                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false" width="14" height="14">
+                    <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                      width="14" height="14">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor" />
-                      </svg>
+                    </svg>
                   </button>
                 </div>
               </div>

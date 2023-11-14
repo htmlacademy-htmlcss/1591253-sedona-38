@@ -238,8 +238,8 @@ body {
 }
 
 .navigation-button {
-  margin-left: 22px;
-  padding: 8px 34px;
+  margin-left: 21px;
+  padding: 8px 35px;
 }
 
 .welcome {
@@ -311,7 +311,7 @@ body {
 }
 
 .advantages-description-big {
-  margin: 0 auto 90px;
+  margin: 0 auto 89px;
   width: 660px;
 }
 
@@ -329,7 +329,7 @@ body {
 }
 
 .advantages-container {
-  padding: 104px 0;
+  padding: 114px 0 112px;
   margin: 0;
   width: 400px;
   text-align: center;
@@ -342,6 +342,7 @@ body {
 
 .advantages-item-special .advantages-container {
   background: #82b3d3;
+  padding: 104px 0 102px;
 }
 
 
@@ -349,11 +350,12 @@ body {
   position: relative;
   margin: 0 auto;
   width: 175px;
-  padding-bottom: 35px;
+  padding-bottom: 31px;
 }
 
 .advantages-item-special .advantages-title-small {
   color: #f2f2f2;
+  padding-bottom: 30px;
 }
 
 .advantages-title-small::after {
@@ -456,7 +458,7 @@ body {
 }
 
 .call-to-action-description {
-  margin: 0 auto 54px;
+  margin: 0 auto 55px;
   width: 660px;
 }
 
@@ -690,7 +692,8 @@ body {
 }
 
 .range-input {
-  padding: 12px 36px 12px 20px;
+  font-family: "PT Sans", sans-serif;
+  padding: 12px 36px 12px 17px;
   width: 143px;
   height: 48px;
   font-size: 18px;
@@ -747,7 +750,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  right: 14px;
+  right: 22px;
 }
 
 .range-scale {
@@ -808,6 +811,7 @@ body {
 }
 
 .button-filter {
+  font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   color: #ffffff;
   width: 191px;
@@ -835,6 +839,7 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans", sans-serif;
   background-color: hsla(204, 48%, 67%, 0);
   color: #ffffff;
   width: 191px;
@@ -898,7 +903,7 @@ body {
   line-height: 21px;
   border-radius: 4px;
   appearance: none;
-  padding-left: 20px;
+  padding-left: 16px;
   padding-right: 40px;
   cursor: pointer;
 }
@@ -921,6 +926,7 @@ body {
   background-image: url("../images/catalog/sorting/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+  font-family: "PT Sans", sans-serif;
 }
 
 .catalog-view {
@@ -979,7 +985,7 @@ body {
   padding: 0;
   list-style: none;
   grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  gap: 18px 20px;
 }
 
 .product-card {
@@ -1200,7 +1206,7 @@ body {
 .subscription {
   background-color: #ffffff;
   color: #000000;
-  padding: 92px 50px 102px 50px;
+  padding: 96px 50px 100px 50px;
   min-height: 415px;
   text-align: center;
   box-sizing: border-box;
@@ -1224,7 +1230,7 @@ body {
 }
 
 .description-index {
-  margin: 0 auto 58px;
+  margin: 0 auto 54px;
   width: 660px;
 }
 
@@ -1252,6 +1258,7 @@ body {
   border-radius: 4px 0 0 4px;
   border: 2px solid hsla(204, 48%, 60%, 0);
   box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
 }
 
 .catalog .email-field {
@@ -1367,7 +1374,7 @@ label[for="email"] {
   color: #000000;
   text-decoration: none;
   max-width: 340px;
-  padding: 2px 0 8px;
+  padding: 5px 0 8px;
 }
 
 .footer-phone:hover {
@@ -1494,6 +1501,8 @@ label[for="email"] {
   width: 100%;
 }
 
+
+
 .search-option {
   max-width: 135px;
   margin-right: auto;
@@ -1566,6 +1575,7 @@ label[for="email"] {
   margin-left: 46px;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .field-child {
@@ -1589,7 +1599,6 @@ label[for="email"] {
   background-color: #e6e6e6;
 }
 
-
 .field-range-input:focus {
   border: 3px solid #83b3d3;
   outline: none;
@@ -1600,6 +1609,15 @@ label[for="email"] {
   outline: none;
 }
 
+.field-range-input::-webkit-outer-spin-button,
+.field-range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .field-range-input::-webkit-inner-spin-button,
 .field-range-input::-webkit-outer-spin-button {
@@ -1626,12 +1644,20 @@ label[for="email"] {
   color: rgb(0, 0, 0);
 }
 
+.quntity-button:focus {
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+
 .quntity-button:focus::before {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
-  outline: 3px, #82b3d3;
+  outline: 3px solid #82b3d3;
+  border-radius: 5px;
+  top: 14px;
+  left: 10px;
 }
 
 .quntity-button:active {
@@ -1648,13 +1674,15 @@ label[for="email"] {
 
 .search-option-child {
   max-width: 90px;
+  display: block;
 }
 
 .tooltip {
   position: absolute;
-  margin-left: 8px;
-  width: 20px;
+  width: 29px;
   height: 20px;
+  right: 0;
+  top: 0;
 }
 
 .tooltip-toggle {
@@ -1662,12 +1690,21 @@ label[for="email"] {
   border: none;
   background-color: #83b3d3;
   padding: 0;
-  margin-left: 2px;
+  margin-left: 39px;
+  margin-top: -1px;
   display: block;
   width: 26px;
   height: 26px;
   border-radius: 50%;
 }
+
+.tooltip-toggle:hover {
+background: #68A2CA;
+}
+
+.tooltip-toggle:focus {
+  outline: 3px solid ;
+  }
 
 .tooltip-icon {
   width: 2px;
@@ -1676,9 +1713,23 @@ label[for="email"] {
   margin: auto;
 }
 
-.tooltip-text {
+.form-label-icon {
+  position: relative;
+  padding-right: 28px;
+  box-sizing: border-box;
+  width: 49px;
+}
+
+.tooltip-container {
   position: absolute;
-  top: 40px;
+  top: 100%;
+  left: -76px;
+  z-index: 1;
+  display: none;
+  padding-top: 20px;
+}
+
+.tooltip-text {
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 400;
@@ -1690,13 +1741,12 @@ label[for="email"] {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   padding: 21px 20px;
   color: #ffffff;
-  left: -113px;
-  z-index: 1;
-  display: none;
+  display: block;
+  position: relative;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toglle:focus + .tooltip-text {
+.tooltip:hover .tooltip-container,
+.tooltip:focus-within .tooltip-container {
   display: block;
 }
 
@@ -1706,11 +1756,9 @@ label[for="email"] {
   width: 19px;
   height: 9px;
   position: absolute;
-  bottom: 141px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -9px;
 }
 
 .button-modal-group {
