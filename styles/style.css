@@ -1699,12 +1699,12 @@ input[type=number] {
 }
 
 .tooltip-toggle:hover {
-background: #68A2CA;
+  background: #68A2CA;
 }
 
 .tooltip-toggle:focus {
-  outline: 3px solid ;
-  }
+  outline: 3px solid;
+}
 
 .tooltip-icon {
   width: 2px;
@@ -1787,7 +1787,6 @@ background: #68A2CA;
   background: #68a2ca;
   outline: none;
 }
-
 
 .button-modal:active {
   color: rgb(255, 255, 255 0, 3);
