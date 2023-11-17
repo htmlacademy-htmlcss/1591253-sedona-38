@@ -4,20 +4,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body class="index">
     <div class="wrapper">
       <header class="page-header">
-        <a href="index.html" class="logo-link">
+        <a class="logo-link">
           <img class="logo" src="./images/header/logo.svg" alt="City of Sedona" width="140" height="70">
         </a>
         <nav class="navigation">
           <ul class="main-menu">
             <li class="main-menu-item main-menu-item-current">
-              <a href="index.html" class="main-menu-link">Главная</a>
+              <a class="main-menu-link">Главная</a>
             </li>
             <li class="main-menu-item">
               <a href="#" class="main-menu-link">О Седоне</a>
@@ -141,7 +142,7 @@
           <h2 class="call-to-action-title sedona-h2">Заинтересовались?</h2>
           <p class="call-to-action-description description-big">Укажите предполагаемые даты поездки,<br> и мы покажем
             вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="call-to-action-button">Поиск гостиницы в Седоне</a>
+            <button class="call-to-action-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
       </main>
@@ -201,7 +202,7 @@
           </div>
           <a href="https://htmlacademy.ru/" class="logo-link-2">
             <svg class="social-icon" aria-hidden="true" focusable="false" width="115" height="34"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="html Академия">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" />
@@ -278,7 +279,7 @@
                   </button>
                 </div>
               </div>
-              <div class="modal-content-group">
+              <div class="modal-content-group modal-content-group-child">
                 <span class="form-label form-label-icon">
                   <label for="start-end" class="search-option search-option-child">Дети:</label>
                   <span class="tooltip">
@@ -299,7 +300,7 @@
                   <button class="less quntity-button" type="button">
                     <svg class="less-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                       width="14" height="2">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
                     </svg>
                   </button>
                   <input type="number" id="start-end" class="field field-range-input" name="child" min="0" max="9"
@@ -313,7 +314,6 @@
                 </div>
               </div>
             </div>
-
 
             <div class="button-modal-group">
               <button class="button-modal button-link" type="submit">Найти</button>

@@ -472,6 +472,7 @@ body {
   text-decoration: none;
   padding: 8px 50px;
   margin: 0;
+  border: none;
   color: #ffffff;
   background: #756157;
   border-radius: 4px;
@@ -1323,7 +1324,7 @@ label[for="email"] {
 .footer-contacts {
   padding: 40px 70px 27px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -1331,9 +1332,9 @@ label[for="email"] {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 5px 0 0 0;
   list-style-type: none;
-  max-width: 360px;
+  width: 144px;
   margin-right: 235px;
 }
 
@@ -1395,6 +1396,7 @@ label[for="email"] {
   margin-left: auto;
   max-width: 120px;
   fill: #000000;
+  margin-top: 9px;
 }
 
 .logo-2 {
@@ -1486,7 +1488,7 @@ label[for="email"] {
   margin-bottom: 23px;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .auth-form {
@@ -1499,8 +1501,16 @@ label[for="email"] {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
+.modal-content-group-adult {
+width: 248px;
+}
+
+.modal-content-group-child {
+width: 242px;
+}
 
 
 .search-option {
@@ -1510,6 +1520,7 @@ label[for="email"] {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  margin-top: 11px;
 }
 
 .modal-error {
@@ -1572,7 +1583,6 @@ label[for="email"] {
 }
 
 .field-adult {
-  margin-left: 46px;
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -1691,7 +1701,7 @@ input[type=number] {
   background-color: #83b3d3;
   padding: 0;
   margin-left: 39px;
-  margin-top: -1px;
+  margin-top: 11px;
   display: block;
   width: 26px;
   height: 26px;
@@ -1699,12 +1709,12 @@ input[type=number] {
 }
 
 .tooltip-toggle:hover {
-background: #68A2CA;
+  background: #68A2CA;
 }
 
 .tooltip-toggle:focus {
-  outline: 3px solid ;
-  }
+  outline: 3px solid;
+}
 
 .tooltip-icon {
   width: 2px;
@@ -1726,7 +1736,7 @@ background: #68A2CA;
   left: -76px;
   z-index: 1;
   display: none;
-  padding-top: 20px;
+  padding-top: 32px;
 }
 
 .tooltip-text {
@@ -1787,7 +1797,6 @@ background: #68A2CA;
   background: #68a2ca;
   outline: none;
 }
-
 
 .button-modal:active {
   color: rgb(255, 255, 255 0, 3);
